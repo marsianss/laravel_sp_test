@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             HallsTableSeeder::class,
             FacilitiesTableSeeder::class,
+            HallFacilityTableSeeder::class, // Add this line
         ]);
 
         User::factory()->create([

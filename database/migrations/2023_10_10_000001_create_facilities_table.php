@@ -10,7 +10,6 @@ class CreateFacilitiesTable extends Migration
     {
         Schema::create('facilities', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('hall_id')->constrained()->onDelete('cascade');
             $table->string('name');
             $table->timestamps();
         });
